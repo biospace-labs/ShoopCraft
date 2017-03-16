@@ -2,8 +2,8 @@
   "modid": "shoopcraft",
   "name": "Shoopcraft",
   "description": "Fancy sheep for the fancy peeps",
-  "version": "1.0.0.0",
-  "mcversion": "1.11.2",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
   "authorList": ["Spacepuffin","Biosaur","Marksmanjay"],
   "credits": "Why am I writing credits before I start making the mod?",
 }]
