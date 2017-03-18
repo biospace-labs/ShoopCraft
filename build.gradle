@@ -12,8 +12,8 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 
 version = "1.0"
-group = "Biospacelabs.Shoopcraft" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Shoopcraft"
+group = "biospace_labs.shoopcraft" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "shoopcraft"
 
 sourceCompatibility = targetCompatibility = "1.6" // Need this here so eclipse task generates correctly.
 compileJava {
