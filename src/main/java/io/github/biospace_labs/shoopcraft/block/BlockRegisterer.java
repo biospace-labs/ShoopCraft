@@ -21,7 +21,7 @@ public class BlockRegisterer {
         steelWoolBlock.setUnlocalizedName("steelwoolblock");
         steelWoolBlock.setLightLevel(1f);
 
-        event.getRegistry().register(steelWoolBlock);
+        GameRegistry.register(steelWoolBlock);
 
         Block spooler = new Block(Material.WOOD);
 
