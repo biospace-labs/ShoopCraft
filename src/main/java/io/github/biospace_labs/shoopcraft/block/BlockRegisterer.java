@@ -32,7 +32,8 @@ public class BlockRegisterer {
         GameRegistry.register(spooler);
 
         ItemBlock spoolerIB = new ItemBlock(spooler);
-        spoolerIB.setRegistryName(spooler.getRegistryName());
+        spoolerIB.setRegistryName("spooler");
+
 
         GameRegistry.register(spoolerIB);
 
