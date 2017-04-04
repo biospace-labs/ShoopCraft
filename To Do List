@@ -1,0 +1,58 @@
+*Put a "~" for finished stuff*
+
+Add New Sheep
+  Add Ore Sheep
+    Plan Ore Sheep Mechanics
+      Program AI
+        Walking
+        Spawning
+        When hit
+        Eating
+      Add material generation
+    Register Ore sheep and Renderers and stuff
+    Draw Textures
+Add Machines
+  Add Harvester
+    Draw textures
+    Register
+    Program Mechanics
+      Add ability To pull Wool form sheep
+  Add Spooler
+    Draw Textures
+    Register
+    Program Mechanics
+      Add Recieving Thread
+      Add Outputting Thread
+  Add Assembler
+    Draw Textures
+    Register
+    Program Mechanics
+      Add Making Custom Armor
+  Add Habitatotron
+    Register (and Renderers)
+    Draw Textures
+    Program Mechanics
+      Detecting corners for habitat
+      Creating Wall
+      Customizability?
+Add Items
+  Add Staff/Wrench
+  Add Loot
+    Add Custom Armors
+      Draw Textures
+      Program Mechanics
+        Shielding
+        Weapon bonuses
+        ???
+  Add Materials
+    Add different types of thread
+      Iron Thread
+        Draw Texture
+        Register
+      Gold Thread
+        Draw Texture
+        Register
+      ???
+    Add miscellaneous materials
+      ???
+  
