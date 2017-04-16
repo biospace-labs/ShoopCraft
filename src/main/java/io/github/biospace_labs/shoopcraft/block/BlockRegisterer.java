@@ -23,23 +23,5 @@ public class BlockRegisterer {
 
         GameRegistry.register(steelWoolBlock);
 
-        Block spooler = new Block(Material.WOOD);
-
-        spooler.setRegistryName("spooler");
-        spooler.setUnlocalizedName("spooler");
-        spooler.setCreativeTab(CreativeTabs.MISC);
-
-        GameRegistry.register(spooler);
-
-        ItemBlock spoolerIB = new ItemBlock(spooler);
-        spoolerIB.setRegistryName("spooler");
-
-
-        GameRegistry.register(spoolerIB);
-
-
-
-
-
     }
 }
