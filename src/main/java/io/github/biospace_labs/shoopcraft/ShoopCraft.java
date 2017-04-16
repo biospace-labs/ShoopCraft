@@ -26,10 +26,16 @@ public class ShoopCraft {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        System.out.println("SHOOPCRAFT: PRE-Initializing");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         System.out.println("SHOOPCRAFT: Initializing");
+    }
+
+    @Mod.EventHandler
+    public void postInit(FMLInitializationEvent event) {
+        System.out.println("SHOOPCRAFT: POST-Initializing");
     }
 }
