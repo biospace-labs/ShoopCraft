@@ -19,6 +19,9 @@ public class ShoopCraft {
     public static final String VERSION = "1.0";
     public static final String ACCEPTED_VERSIONS = "[1.11.2]";
 
+    @Mod.Instance
+    public static ShoopCraft instance;
+
     @SidedProxy(serverSide = "io.github.biospace_labs.shoopcraft.proxy.CommonProxy", clientSide = "io.github.biospace_labs.shoopcraft.proxy.ClientProxy")
     public static CommonProxy proxy;
 
