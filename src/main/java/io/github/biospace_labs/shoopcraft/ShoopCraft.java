@@ -1,6 +1,7 @@
 package io.github.biospace_labs.shoopcraft;
 
 
+import io.github.biospace_labs.shoopcraft.init.ModBlocks;
 import io.github.biospace_labs.shoopcraft.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -18,6 +19,28 @@ public class ShoopCraft {
     public static final String CLIENT_PROXY_CLASS = "io.github.biospace_labs.shoopcraft.proxy.ClientProxy";
     public static final String SERVER_PROXY_CLASS = "io.github.biospace_labs.shoopcraft.proxy.ServerProxy";
 
+    public static enum ShoopcraftBlocks{
+        spooler("spooler", "BlockSpooler");
+
+        private String unlocalisedName;
+        private String registryName;
+
+        ShoopcraftBlocks(String unlocalisedName, String registryName){
+            this.unlocalisedName = unlocalisedName;
+            this.registryName = registryName;
+        }
+
+        public String getUnlocalisedName() {
+            return unlocalisedName;
+        }
+
+        public String getRegistryName() {
+            return registryName;
+        }
+    }
+
+
+
     @Mod.Instance
     public static ShoopCraft instance;
 
@@ -27,11 +50,14 @@ public class ShoopCraft {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         System.out.println("SHOOPCRAFT: PRE-Initializing");
+        ModBlocks.init();
+        ModBlocks.register();
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         System.out.println("SHOOPCRAFT: Initializing");
+        proxy.init();
     }
 
     @Mod.EventHandler
